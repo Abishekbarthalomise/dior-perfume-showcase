@@ -24,3 +24,18 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Subtle luxury breathing animation for focal bottles */
+@keyframes luxury-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-luxury-float {
+  animation: luxury-float 2s ease-in-out infinite;
+}
+
